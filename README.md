@@ -86,4 +86,4 @@ Acknowledgements
 
 Majority of the source code in model.py is from: Taehoon Kim / [@carpedm20](http://carpedm20.github.io/).
 
-The functions for reading the bAbI dataset and feeding it to the graph was modified.
+The functions for reading the bAbI dataset and feeding it to the graph was modified. Also, the variable and operation names were modified for the ease of comparing the source code and the original paper.
