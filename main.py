@@ -39,7 +39,7 @@ def main(_):
     if not os.path.exists(FLAGS.checkpoint_dir):
         os.makedirs(FLAGS.checkpoint_dir)
 
-    train_stories, train_questions, max_words, max_sentences = read_data('{}/qa{}_test.txt'.format(FLAGS.data_dir, FLAGS.babi_task), word2idx, max_words, max_sentences)
+    train_stories, train_questions, max_words, max_sentences = read_data('{}/qa{}_train.txt'.format(FLAGS.data_dir, FLAGS.babi_task), word2idx, max_words, max_sentences)
     valid_stories, valid_questions, max_words, max_sentences = read_data('{}/qa{}_valid.txt'.format(FLAGS.data_dir, FLAGS.babi_task), word2idx, max_words, max_sentences)
     test_stories, test_questions, max_words, max_sentences = read_data('{}/qa{}_test.txt'.format(FLAGS.data_dir, FLAGS.babi_task), word2idx, max_words, max_sentences)
 
