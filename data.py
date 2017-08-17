@@ -74,7 +74,7 @@ def read_data(fname, word2idx, max_words, max_sentences):
                     break
         
         # Update max_sentences
-        max_sentences = max(max_sentences, sentence_ind)
+        max_sentences = max(max_sentences, sentence_ind+1)
     
     
     
